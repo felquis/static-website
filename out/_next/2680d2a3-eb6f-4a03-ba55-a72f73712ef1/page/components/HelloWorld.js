@@ -1,0 +1,1 @@
+module.exports=__NEXT_REGISTER_PAGE("/components/HelloWorld",function(){var o=webpackJsonp([4],{181:function(o,e,n){o.exports=n(90)}},[181]);return{page:o.default}});

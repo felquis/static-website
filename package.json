@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "NextJS Static Website",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Felquis Gimenes",
+  "private": true,
+  "scripts": {
+    "start": "next start",
+    "export": "next export",
+    "dev": "next",
+    "preexport": "next build",
+    "prepreview": "export",
+    "preview": "serve -s ./out"
+
+  },
+  "dependencies": {
+    "@zeit/next-css": "^0.0.7",
+    "next": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "postcss-css-variables": "^0.8.0",
+    "postcss-import": "^11.0.0",
+    "serve": "^6.4.9"
+  }
+}
