@@ -1,3 +1,3 @@
 module.exports = {
-  '--website-color-white': 'pink',
+  '--website-color-white': 'red',
 }
