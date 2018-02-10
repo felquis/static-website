@@ -10,10 +10,11 @@
     "start": "next start",
     "export": "next export",
     "dev": "next",
+    "build": "next build",
     "preexport": "next build",
+    "prestart": "next build",
     "prepreview": "export",
     "preview": "serve -s ./out"
-
   },
   "dependencies": {
     "@zeit/next-css": "^0.0.7",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "postcss-css-variables": "^0.8.0",
+    "postcss-custom-properties": "^6.2.0",
     "postcss-import": "^11.0.0",
     "serve": "^6.4.9"
   }

@@ -1,0 +1,8 @@
+:root {
+  --website-color-white: #fff;
+  --website-color-blue: blue;
+  --website-header-height: 50px;
+  --website-header-background-color: var(--website-color-blue);
+  --website-header-color: var(--website-color-white);
+  --website-container-width: 1024px;
+};

@@ -1,0 +1,18 @@
+@import "../../properties.css";
+
+.s {}
+
+.header {
+  background-color: var(--website-header-background-color);
+  color: var(--website-color-white);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--website-container-width);
+  display: flex;
+  align-items: center;
+  height: var(--website-header-height);
+}
