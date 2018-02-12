@@ -14,7 +14,7 @@ Use ReactJS to create UI Components, build your own components
 
 ### JS
 
-Create isolated JavaScript functions which will help you test your code. 
+Create isolated JavaScript functions which will help you test your code.
 
 ## Development
 
@@ -29,3 +29,22 @@ You can also use `yarn start` to start a nodejs process with optimized files, in
 ## Production Preview
 
 Run `yarn preview` to generate all the optmized static files and serve it under `http://localhost:5000`
+
+## i18n URLs
+
+Currently I'm working on this url approach
+
+```
+/
+/en
+/es
+
+/blog
+/es/blog
+/en/blog
+
+/application
+/en/application
+/es/application
+```
+

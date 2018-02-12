@@ -1,0 +1,16 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "inline-react-svg",
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "containers": "./src/containers",
+        "components": "./src/components",
+        "src": "./src",
+        "static": "./static"
+      }
+    }]
+  ]
+}

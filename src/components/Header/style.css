@@ -3,16 +3,49 @@
 .s {}
 
 .header {
+  color: blue;
+  height: var(--website-header-height);
+  width: 100%;
   background-color: var(--website-header-background-color);
-  color: var(--website-color-white);
+  z-index: 10;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header > .container {
+  height: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container {
   width: 100%;
-  max-width: var(--website-container-width);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.brand {
   display: flex;
   align-items: center;
-  height: var(--website-header-height);
+  font-size: 30px;
+  color: #fff;
+}
+
+.brand svg {
+  width: 1em;
+  margin-left: 0.5em;
+}
+
+.brand path {
+  fill: #fff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }

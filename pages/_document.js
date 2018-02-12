@@ -1,20 +1,23 @@
+import React, { Component } from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
+import flush from 'styled-jsx/server'
 
-export default class MyDocument extends Document {
+class CustomDocument extends Document {
   static getInitialProps({ renderPage }) {
     const { html, head, errorHtml, chunks } = renderPage()
-
-    return { html, head, errorHtml, chunks }
+    const styles = flush()
+    return { html, head, errorHtml, chunks, styles }
   }
 
   render() {
-
     return (
       <html>
         <Head>
-          <link rel="stylesheet" href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/style.css`} />
+          {/* insert global metadata here */}
+          {process.env.NODE_ENV === 'production' && (
+            <link rel="stylesheet" href={`/_next/static/style.css`} />
+          )}
         </Head>
-
         <body>
           <Main />
 
@@ -24,3 +27,5 @@ export default class MyDocument extends Document {
     )
   }
 }
+
+export default CustomDocument

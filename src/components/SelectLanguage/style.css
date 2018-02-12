@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.button span {
+  padding: 0 0.5em;
+  border-right: 2px solid #fff;
+  height: 1em;
+  display: block;
+}
+
+.container .button:last-child span {
+  border-right: 0;
+}
+
+.globe {
+  margin-right: 0.5em;
+}
