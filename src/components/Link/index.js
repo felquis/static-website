@@ -14,11 +14,6 @@ const Link = (props) => {
       <a href={href}>{props.children}</a>
     </NextLink>
   )
-
-  // return (
-  //   // works but not that good
-  //   <a {...props} href={href}>{props.children}</a>
-  // )
 }
 
 export default withRouter(Link)
