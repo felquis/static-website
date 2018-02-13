@@ -9,8 +9,8 @@ import {
 const Link = (props) => {
   const href = localizeUrlPath(props.router, props.href)
 
-  // doesn't work
-  // <NextLink {...props} href={href}>{props.children}</NextLink>
+  // uncomment this line to reproduce the problem
+  // return <NextLink {...props} href={href}>{props.children}</NextLink>
 
   return (
     // works but not that good
