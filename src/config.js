@@ -1,5 +1,5 @@
-const config = {
-  defaultLanguage: 'en'
-}
+const defaultLanguage = 'en'
 
-export default config
+export {
+  defaultLanguage
+}
