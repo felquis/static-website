@@ -31,6 +31,12 @@ class IntlContainer extends Component {
     })
   }
 
+  componentWillReceiveProps (nextProps) {
+    this.setState({
+      locale: nextProps.locale
+    })
+  }
+
   render () {
     const locale = this.state.locale
     const children = this.props.children
