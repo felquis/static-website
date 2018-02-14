@@ -3,7 +3,13 @@ import { withRouter } from 'next/router'
 
 import style from './style.css'
 
-import { changeLocale } from '../../containers/IntlContainer'
+import { getLocalizedPath } from 'helpers'
+
+const changeLocale = (router, lang) => {
+  const href = getLocalizedPath(router, lang)
+
+  location.href = href
+}
 
 const SelectLanguage = ({
   router

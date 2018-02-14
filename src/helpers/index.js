@@ -11,7 +11,7 @@ const getLocalizedPath = (router, lang) => {
   return ['', newLanguage, ...splitPath.slice(localizedSlice)].join('/')
 }
 
-const localizeUrlPath = (router, href) => {
+const getLocalizedFromRouterAsPath = (router, href) => {
   const splitPath = href.split('/')
   const localizedSlice = !!locales[splitPath[1]] ? 2 : 1
   const asPathLocale = router.asPath.split('/')[1]
@@ -22,11 +22,11 @@ const localizeUrlPath = (router, href) => {
 
     return linkTo
   } else {
-    return href
+    return splitPath.join('/')
   }
 }
 
 export {
   getLocalizedPath,
-  localizeUrlPath
+  getLocalizedFromRouterAsPath
 }

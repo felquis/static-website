@@ -3,11 +3,11 @@ import { withRouter } from 'next/router'
 import NextLink from 'next/link'
 
 import {
-  localizeUrlPath
-} from '../../helpers'
+  getLocalizedFromRouterAsPath
+} from 'helpers'
 
 const Link = (props) => {
-  const href = localizeUrlPath(props.router, props.href)
+  const href = getLocalizedFromRouterAsPath(props.router, props.href)
 
   return (
     <NextLink href={props.href} as={href}>
