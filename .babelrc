@@ -1,5 +1,5 @@
 {
-  "presets": ["next/babel"],
+  "presets": ["next/babel", "env", "react"],
   "plugins": [
     "transform-decorators-legacy",
     "inline-react-svg",
@@ -9,7 +9,8 @@
         "containers": "./src/containers",
         "components": "./src/components",
         "src": "./src",
-        "static": "./static"
+        "static": "./static",
+        "helpers": "./src/helpers"
       }
     }]
   ]
