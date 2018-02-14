@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { IntlProvider } from 'react-intl'
 import { withRouter } from 'next/router'
 
-import locales from '../locales'
-import config from '../config'
+import locales from '../../locales'
+import { defaultLanguage } from '../../config'
 import {
   getLocalizedPath
-} from '../helpers'
+} from 'helpers'
 
 class IntlContainer extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ class IntlContainer extends Component {
 }
 
 IntlContainer.defaultProps = {
-  locale: config.defaultLanguage,
+  locale: defaultLanguage,
 }
 
 const changeLocale = (router, lang) => {
