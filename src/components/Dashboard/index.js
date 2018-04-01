@@ -3,15 +3,17 @@ import { injectIntl } from 'react-intl'
 import Head from 'next/head'
 
 const Dashboard = ({ intl }) => {
+  const t = intl.formatMessage
+
   return (
     <div>
       <Head>
-        <meta name="description" content={intl.formatMessage({
+        <meta name="description" content={t({
           id: 'This is your dashboard description for Search Engines'
         })} />
       </Head>
 
-      { intl.formatMessage({ id: 'This is the Dashboard home page' }) }
+      {t({ id: 'This is the Dashboard home page' })}
     </div>
   )
 }

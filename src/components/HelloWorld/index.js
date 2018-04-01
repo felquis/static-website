@@ -1,16 +1,16 @@
 import React from 'react'
 
 import { Container } from '../Grid'
-import Intl from '../Intl'
+import { injectIntl } from 'react-intl'
 
 import style from './style.css'
 
-const HelloWorld = () => (
+const HelloWorld = ({intl}) => (
   <div className={style.root}>
     <Container>
-      <Intl id="Hello World!" />
+      {intl.formatMessage({id: 'Hello World!'})}
     </Container>
   </div>
 )
 
-export default HelloWorld
+export default injectIntl(HelloWorld)

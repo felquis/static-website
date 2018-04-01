@@ -7,4 +7,4 @@ const Blog = ({ intl }) => (
   </div>
 )
 
-export default  injectIntl(Blog)
+export default injectIntl(Blog)

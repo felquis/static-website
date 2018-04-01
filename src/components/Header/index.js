@@ -3,7 +3,6 @@ import classNames from 'classnames'
 
 import SelectLanguage from 'components/SelectLanguage'
 import Link from 'components/Link'
-import Intl from 'components/Intl'
 import { Container } from '../Grid'
 
 import style from './style.css'
